@@ -6,8 +6,8 @@ import sys
 # version = ".".join([str(v) for v in version_tuple])
 
 setup(
-    name='django-xadmin',
-    version='0.5.0',
+    name='django-xadmin-mirror',
+    version='0.5.18',
     description='Drop-in replacement of Django admin comes with lots of goodies, fully extensible with plugin support, pretty UI based on Twitter Bootstrap.',
     long_description=open('README.rst').read() if sys.version_info[0] == 2 else open('README.rst', encoding='utf-8').read(),
     author='sshwsfc',
@@ -18,8 +18,6 @@ setup(
     packages=['xadmin', 'xadmin.plugins', 'xadmin.templatetags', 'xadmin.views'],
     include_package_data=True,
     install_requires=[
-        'django==1.7.8',
-        'django-crispy-forms>=1.4.0',
     ],
     extras_require={
         'Excel': ['xlwt', 'xlsxwriter'],
